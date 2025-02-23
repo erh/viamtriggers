@@ -43,7 +43,7 @@ func (cfg *Config) Validate(path string) ([]string, error) {
 	if cfg.Switch == "" {
 		return nil, fmt.Errorf("need a sensor")
 	}
-	return nil, nil
+	return []string{cfg.Sensor, cfg.Switch}, nil
 }
 
 func (cfg *Config) threshold() float64 {
