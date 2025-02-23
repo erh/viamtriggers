@@ -5,6 +5,12 @@
     "url": "https://github.com/erh/viamtriggers",
     "description": "library for various kinds of triggers based on sensors",
     "models": [
+        {
+            "api": "rdk:service:generic",
+            "model": "erh:viamtriggers:movement-motion",
+            "short_description": "trigger a switch based on movement from a Movement Sensor",
+            "markdown_link": "README.md#movement-motion"
+        }
     ],
     "entrypoint": "bin/viamtriggersmodule",
     "first_run": "",
