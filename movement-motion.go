@@ -165,6 +165,7 @@ func (mm *triggerMovementMotion) run() {
 				mm.logger.Warnf("error setting position for idle %v", err)
 			} else {
 				lastMotion = time.Now()
+				triggered = false
 			}
 		}
 
