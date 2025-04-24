@@ -11,5 +11,6 @@ import (
 func main() {
 	module.ModularMain(
 		resource.APIModel{generic.API, viamtriggers.TriggersMovementMotion},
+		resource.APIModel{generic.API, viamtriggers.SunsetLightModel},
 	)
 }

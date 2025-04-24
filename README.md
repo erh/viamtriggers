@@ -14,3 +14,15 @@ Uses a movement sensor to detect motion, and turn a switch on or off
    "threshold" : 10, // optional, threshold for angularvelocity movement
 }
 ```
+
+## sunset-lights
+
+Turn lights on after sunset
+
+```json
+{
+   "switch" : <name>, // required, name of the sensor
+   "lat" : <latitude>, // required
+   "lng" : <longitude> // required
+}
+```

@@ -10,7 +10,14 @@
             "model": "erh:viamtriggers:movement-motion",
             "short_description": "trigger a switch based on movement from a Movement Sensor",
             "markdown_link": "README.md#movement-motion"
+        },
+        {
+            "api": "rdk:service:generic",
+            "model": "erh:viamtriggers:sunset-lights",
+            "short_description": "turn lights on after sunset",
+            "markdown_link": "README.md#sunset-lights"
         }
+
     ],
     "entrypoint": "bin/viamtriggersmodule",
     "first_run": "",

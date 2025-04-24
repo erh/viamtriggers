@@ -2,7 +2,11 @@ module github.com/erh/viamtriggers
 
 go 1.23
 
-require go.viam.com/rdk v0.63.0
+require (
+	github.com/nathan-osman/go-sunrise v1.1.0
+	go.viam.com/rdk v0.63.0
+	go.viam.com/utils v0.1.130
+)
 
 require (
 	cloud.google.com/go v0.115.1 // indirect
@@ -118,7 +122,6 @@ require (
 	go.uber.org/zap v1.27.0 // indirect
 	go.viam.com/api v0.1.388 // indirect
 	go.viam.com/test v1.2.4 // indirect
-	go.viam.com/utils v0.1.130 // indirect
 	golang.org/x/crypto v0.28.0 // indirect
 	golang.org/x/exp v0.0.0-20240904232852-e7e105dedf7e // indirect
 	golang.org/x/image v0.19.0 // indirect
