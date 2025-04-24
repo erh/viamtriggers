@@ -94,7 +94,7 @@ func (sl *sunsetLight) doLoop(ctx context.Context, now time.Time) error {
 		now.Day(),
 	)
 
-	sl.logger.Infof("set: %v", set)
+	sl.logger.Infof("sunset: %v", set)
 
 	if now.Before(set) {
 		sl.logger.Infof("durring day, turn lights off")
@@ -112,7 +112,7 @@ func (sl *sunsetLight) run() {
 
 		err := sl.doLoop(sl.backgroundContext, start)
 		if err != nil {
-			sl.logger.Warnf("error in doLoop: %v", err)
+			sl.logger.Errorf("error in doLoop: %v", err)
 		}
 
 		sleepTime := time.Minute - time.Since(start)
